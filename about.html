@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+
+        @media (max-width: 720px) {
+            #container {
+                display: block;
+                box-sizing: border-box;
+            }
+
+            #content {
+                margin-left: 0;
+                padding: 0%;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            #sidebar {
+                display: none;
+                box-sizing: border-box;
+            }
+        
+            
+        }
+
+        #sidebar {
+            font-size: large;
+            width: 20%;
+            height: 100%;
+            background-color: #e3bfa9;
+            padding: 5px;
+            box-sizing: border-box;
+            position: fixed;
+        }
+
+        #sidebar div {
+            margin-bottom: 10px;
+        }
+
+        #sidebar a {
+            display: block;
+            margin: 5px 0;
+            padding-left: 5px;
+            text-decoration: none;
+            color: #4e5454
+        }
+
+        #sidebar a:hover {
+            color: #e3bfa9;
+            background-color: #4e5454;
+            border-radius: 15px;
+        }
+
+        #content {
+            margin-left: 20%;
+            padding: 5px;
+            width: 80%;
+            box-sizing: border-box;
+        }
+
+        .clearfix {
+            clear:both;
+        }
+
+        .grid {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .grid > div {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .grid img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .grid p {
+            font-size: large;
+        }
+
+        .bday {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .bday img {
+            width: 100%;
+            max-width: 590px;
+            height: auto;
+        }
+
+        td img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            
+        }
+
+        td {
+            text-align: center;
+            font-size: large;
+            width:50%;
+        }
+
+        #map {
+            padding: 5px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div>
+        <div id="container">
+            <div id="sidebar">
+                <h3>About:</h3>
+                <div><a href="#family">My Family</a></div>
+                <div><a href="#pets">My Pets</a></div>
+                <div><a href="#birthday">My Birthday</a></div>
+                <div><a href="#favorites">My Favorites</a></div>
+                <div><a href="#sTrips">Stateside Trips</a></div>
+                <div><a href="#iTrips">International Trips</a></div>
+            </div>
+            <div id="content">
+                <h1 id="family">My Family</h1>
+                <dl>
+                    <!--I don't want to put pictures of my family on this site, because that seems to personal-->
+                    <dt>My Mom</dt>
+                    <dd>My mom is an elementary school teacher for K - 6th grade.  She teaches acceleated content to K - 3rd graders and acceleated Reading to 4th and 5th graders.</dd>
+                    <dd>My favorite thing about her is how she is always in my corner.  I love spending lots of time with her!</dd>
+                    <dt>My Dad</dt>
+                    <dd>My dad works in insurance.  He started working from home right before the pandemic.</dd>
+                    <dd>My favorite thing about him is how he is always supporting me.  I love how he always encourages me to get out of my comfort zone!</dd>
+                    <dt>Me</dt>
+                    <dd>I am the oldest of three girls.  I am a sophomore at NKU studying Computer Science and Cybersecurity.</dd>
+                    <dd>I am the vice-president of WiCyS, and I tutor with NKU's math department.  I also work at Chick-fil-A.</dd>
+                    <dt>Courtney</dt>
+                    <dd>Courtney is a senior in high school.  She really enjoys her engineering classes!</dd>
+                    <dd>Courney is a member of her school's Claybusters club.  She is also a member of the Archery club.  She works at Skyline Chili.</dd>
+                    <dt>Hailey</dt>
+                    <dd>Hailey is an 8th grader in middle school.  She really likes her English teacher.</dd>
+                    <dd>Hailey is participating in her school's 8th grade play.  She is also a member of the Euchre club!</dd>
+                </dl>
+                <br>
+                <h1 id="pets">My Pets</h1>
+                <p align="center" style="font-size:large; padding-bottom:0%; margin-bottom:0%">I have two dogs.  They are siblings from the same litter, but they look nothing alike!</p>
+                <div class="grid">
+                    <div>
+                        <img src="imgs/carrie.jpg">
+                        <br>
+                        Carrie
+                        <br>
+                        <p>Carrie is my dog.  She is extraordinarily energetic, but she also loves to cuddle.  She loves table scraps and treats, but she won't eat vegetables!</p>
+                    </div>
+                    <div>
+                        <img src="imgs/garth.jpg">
+                        <br>
+                        Garth
+                        <br>
+                        <p>Garth is my sister's dog.  He is extraordinarily lazy, but he loves roughhouse with Carrie.  He also does not like vegetables, but he is pickier in general!</p>
+                    </div>
+                </div>
+                <h1 id="birthday">My Birthday</h1>
+                
+                <div class="bday">
+                    <img src="imgs/starsign.jpg" />
+                    <p>My birthday is July 5th.  That means my star sign is Cancer.  I don't love the negative connotation surrounding the name, and I always feel weird saying, "I'm a Cancer" on the rare occasion people ask.  I do think I lucked out on my birthstone; it's ruby!</p>
+                </div>
+
+                <h1 id="favorites">My Favorites</h1>
+                <ul>
+                    <li><b>Favorite Ice-Cream Flavor:</b> Moose Tracks</li>
+                    <li><b>Favorite Drink:</b> Cherry Coke</li>
+                    <li><b>Favorite Dinner:</b> Steak with Rolls and a Loaded Baked Potato</li>
+                    <li><b>Favorite Color:</b> Red</li>
+                    <li><b>Favorite Author:</b> Sarah J. Maas, to learn more visit my <a href="hobbies.html">Hobbies Page</a></li>
+                    <li><b>Favorite Class:</b> Web Dev, to learn more visit my <a href="experience.html">Experience Page</a></li>
+                </ul>
+                <br>
+
+                <h1 id="sTrips">Stateside Trips</h1>
+                <h2>For most of my life, my family has taken an annual vacation outside of Ohio, where we live.  These are the states I have visited.  (I do not count just spending the night on the way to another state.)</h2>
+                <img id="map" src="imgs/statesMap.png" />
+                <br>
+
+                <h1 id="iTrips">International Trips</h1>
+                <h2>My sister and I visited London (England), Paris (France), and Barcelona (Spain) in June 2022.</h2>
+                <table width="100%" border="1">
+                    <tr>
+                        <td colspan="2" align="center"><h2>Europe</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="imgs/europe/england1.jpg" />
+                            <br>
+                            Windsor Castle
+                        </td>
+                        <td>
+                            <img src="imgs/europe/england2.jpg" />
+                            <br>
+                            Queen Elizabeth II's Platinum Jubilee
+                        </td>                    
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><h2>France</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="imgs/europe/france1.jpg" />
+                            <br>
+                            Arc de Triomphe
+                        </td>
+                        <td>
+                            <img src="imgs/europe/france2.jpg" />
+                            <br>
+                            Eiffel Tower
+                        </td>                    
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><h2>Spain</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="imgs/europe/spain1.jpg" />
+                            <br>
+                            Park G&uuml;ell
+                        </td>
+                        <td>
+                            <img src="imgs/europe/spain2.jpg" />
+                            <br>
+                            Bas&iacute;lica de la Sagrada Fam&iacute;lia
+                        </td>                    
+                    </tr>
+                </table>
+                <h2>UPCOMING TRIP: Athens, Greece in December 2024!</h2>
+                <h2>UPCOMING TRIP: Tokyo, Japan in June 2027!</h2>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+</html>

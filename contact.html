@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        .twoColumns {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .twoColumns div {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            padding-bottom: 25px;
+            box-sizing: border-box;
+            
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #e3bfa9;
+            color: #fdfffe;
+            border-radius: 15px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 700px) {
+            .twoColumns {
+                grid-template-columns: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('contact').addEventListener('submit', function(e) {
+                e.preventDefault();  
+                
+                alert("Form Submitted Successfully!");  
+                
+                window.location.href = "thankYou.html";
+            });
+        });
+        
+    </script>
+
+</head>
+<body style="background:#4e5454; color:#fdfffe">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="twoColumns">
+        <div>
+            <center>
+                <h1> Contact Me</h1>
+                <p>I am here to assist you!  If you have any questions, comments, concerns, or confusions please feel free to reach out to me.
+                    <br><br>
+                    You can also email me.  Click here to do so: 
+                    <br>
+                    <a href="mailto:boomers1@nku.edu">boomers1@nku.edu</a>
+                </p>
+            </center>
+        </div>
+        <div>
+            <h1 align="center">Contact Form</h1>
+            <h5 align="center">Required Fields matched with an asterisk *</h5>
+
+            <center>
+                <form name="contact" method="post" action="thankYou.html" id="contact">
+                    <table>
+                        <tr>
+                            <td align="right"><label for="fname">First Name:* </label></td>
+                            <td><input type="text" name="fname" id="fname" placeholder="ex. John" required></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="lname">Last Name:* </label></td>
+                            <td><input type="text" name="lname" id="lname" placeholder="ex. Doe" required></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label name="email" for="mail">Email:* </label></td>
+                            <td><input type="email" name="email" id="email" placeholder="jdoe@domain.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">Comments:*</td>
+                            <td><textarea name="feedback" rows="3" cols="20"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="left"><input type="submit" name="Submit" value="Submit">&nbsp;&nbsp;<input type="reset" name="Clear" value="Clear"></td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+        </div>
+    </div>
+
+</body>
+</html>
